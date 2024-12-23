@@ -6,3 +6,17 @@
   background: rgb(0,0,0);
   background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(197,45,209,1) 100%);
 }
+
+@font-face {
+  font-family: "Clash Display";
+  src: url("/fonts/ClashDisplay-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rover Explore";
+  src: url("/fonts/rover-explore.regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
