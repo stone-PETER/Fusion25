@@ -1,8 +1,10 @@
+import Navbar from '../../components/Navbar';
 import RegBtn from '../../components/RegBtn';
 
 const Hero = () => {
   return (
     <div className="relative w-full h-screen md:h-[900px] bg-black overflow-hidden">
+
       <img
         src="/Images/hero-bg-mobile.png"
         alt="Mobile Background"
@@ -15,10 +17,8 @@ const Hero = () => {
         className="absolute w-full h-full object-cover object-center hidden md:block"
       />
 
-      <div>
-        <img src="/Images/35-mace.png" alt="35 - MACE Logo"
-        className='absolute top-16 left-8 w-16 md:w-32'
-        />
+      <div className="absolute">
+        <Navbar />    
       </div>
 
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 z-10 text-center px-4 md:px-0">
@@ -37,6 +37,7 @@ const Hero = () => {
 
       <div className="absolute bottom-16 md:bottom-8 left-1/2 transform -translate-x-1/2 z-10 mt-16 px-4 sm:px-8 md:px-0">
         <RegBtn />
+
       </div>
     </div>
   );
