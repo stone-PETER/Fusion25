@@ -1,8 +1,14 @@
 import Heading from "../../components/Heading"
+import './../../index.css'
 
 const About = () => {
   return (
-    <div className="bg-black text-white p-32 text-center  flex flex-col justify-center">
+    <div className="bg-black text-white p-32 text-center  flex flex-col justify-center relative">
+
+      <div className="gradient-circle absolute top-10 left-20"></div>
+      <div className="gradient-circle absolute top-1/4 right-10"></div>
+      <div className="gradient-circle absolute bottom-10 left-1/3"></div>
+
       <Heading heading="about fusion"/>
 
       <p className="my-8 text-base md:text-lg leading-relaxed font-ClashDisplay text-center max-w-3xl mx-auto mb-8">

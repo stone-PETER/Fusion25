@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
+import './../../index.css'
 
 
 const Session = () => {
@@ -48,6 +49,11 @@ const Session = () => {
   let swiperInstance = null;
   return (
     <section className="bg-black py-10 relative overflow-hidden">
+
+      <div className="gradient-circle absolute  left-10"></div>
+      <div className="gradient-circle absolute  right-10"></div>
+      <div className="gradient-circle absolute bottom-0 left-1/4"></div>
+
         <Heading heading="sessions" />
         <ContainerBox>
           <Swiper

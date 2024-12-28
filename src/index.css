@@ -7,6 +7,17 @@
   background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(197,45,209,1) 100%);
 }
 
+.gradient-circle {
+  background: radial-gradient(circle, rgb(183, 0, 165) 0%, rgb(183, 0, 165) 93%);
+  border-radius: 50%;
+  filter: blur(150px);
+  opacity: 0.3;
+  z-index: 1;
+  width: 400px; 
+  height: 400px;
+}
+
+
 @font-face {
   font-family: "Clash Display";
   src: url("/fonts/ClashDisplay-Regular.otf") format("opentype");
@@ -20,8 +31,5 @@
   font-weight: normal;
   font-style: normal;
 }
-.about-bg {
-  background: radial-gradient(circle, #1c0327 0%, #000000 100%);
-  width: 100%;  
-}
+
 
