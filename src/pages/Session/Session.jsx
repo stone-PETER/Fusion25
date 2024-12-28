@@ -1,12 +1,14 @@
 import { Swiper, SwiperSlide } from "swiper/react"
 import Heading from "../../components/Heading"
 import SessionsCard from "./SessionsCard"
+import ContainerBox from "../../components/ContainerBox"
 import { Autoplay } from 'swiper/modules';
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
+import './../../index.css'
 
 
 const Session = () => {
@@ -47,52 +49,58 @@ const Session = () => {
   let swiperInstance = null;
   return (
     <section className="bg-black py-10 relative overflow-hidden">
+
+      <div className="gradient-circle absolute  left-10"></div>
+      <div className="gradient-circle absolute  right-10"></div>
+      <div className="gradient-circle absolute bottom-0 left-1/4"></div>
+
         <Heading heading="sessions" />
-        <Swiper
-             onSwiper={(swiper) => (swiperInstance = swiper)}
-            loop={true}
-            autoplay={{ delay: 3000,disableOnInteraction: true,}}
-            modules={[EffectCoverflow, Pagination, Navigation,Autoplay]}
-            className="mySwiper"
-            effect={"coverflow"}
-            coverflowEffect={{
-              rotate: 10,
-              stretch: 50,
-              depth: 200,
-              modifier: 1,
-              slideShadows:false
-            }}
-            breakpoints={{
-              320: {
-                slidesPerView: 1,
-                spaceBetween: 40,
-              },
-              640: {
-                slidesPerView: 2,
-                spaceBetween: 30,
-              },
-              1024: {
-                slidesPerView: 3,
-                spaceBetween: 50,
-              },
-            }}
-          >
-            
-              {
-                sessionsData.map((session,index)=>(
-                  <SwiperSlide key={index}>
-                  <SessionsCard
-                  name={session.name}
-                  description={session.description}
-                  image={session.image}
-                   onMouseEnter={() => swiperInstance?.autoplay.stop()} // Pause autoplay
-                  onMouseLeave={() => swiperInstance?.autoplay.start()} // Resume autoplay
-                  />
-                </SwiperSlide>
-                ))
-              }
-          </Swiper>
-        
+        <ContainerBox>
+          <Swiper
+              onSwiper={(swiper) => (swiperInstance = swiper)}
+              loop={true}
+              autoplay={{ delay: 3000,disableOnInteraction: true,}}
+              modules={[EffectCoverflow, Pagination, Navigation,Autoplay]}
+              className="mySwiper"
+              effect={"coverflow"}
+              coverflowEffect={{
+                rotate: 10,
+                stretch: 50,
+                depth: 200,
+                modifier: 1,
+                slideShadows:false
+              }}
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 40,
+                },
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 40,
+                },
+              }}
+            >
+              
+                {
+                  sessionsData.map((session,index)=>(
+                    <SwiperSlide key={index}>
+                    <SessionsCard
+                    name={session.name}
+                    description={session.description}
+                    image={session.image}
+                    onMouseEnter={() => swiperInstance?.autoplay.stop()} // Pause autoplay
+                    onMouseLeave={() => swiperInstance?.autoplay.start()} // Resume autoplay
+                    />
+                  </SwiperSlide>
+                  ))
+                }
+            </Swiper>
+          </ContainerBox>
     </section>
   )
 }
