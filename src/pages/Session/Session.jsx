@@ -1,9 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react"
 import Heading from "../../components/Heading"
 import SessionsCard from "./SessionsCard"
-<<<<<<< HEAD
 import ContainerBox from "../../components/ContainerBox"
-=======
 import { Autoplay } from 'swiper/modules';
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -11,7 +9,6 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
->>>>>>> 08996e20dbbdc9541d8afe629f5412e4279e1acf
 
 const Session = () => {
   const sessionsData =
