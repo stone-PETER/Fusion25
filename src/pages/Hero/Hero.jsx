@@ -35,7 +35,7 @@ const Hero = () => {
         </p>
       </div>
 
-      <div className="absolute bottom-16 md:bottom-8 left-1/2 transform -translate-x-1/2 z-10 mt-16 px-4 sm:px-8 md:px-0">
+      <div className="absolute bottom-32 md:bottom-8 left-1/2 transform -translate-x-1/2 z-10 mt-16 px-4 sm:px-8 md:px-0">
         <RegBtn />
 
       </div>
