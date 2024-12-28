@@ -1,6 +1,8 @@
+import Sessions from "./pages/Session/sessions"
+
 const App = () => {
   return (
-    <div className="text-red-800 text-4xl">App</div>
+    <Sessions/>
   )
 }
 export default App
