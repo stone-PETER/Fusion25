@@ -30,6 +30,7 @@ export default {
     },
     fontFamily: {
       'RoverExplore': ['Rover Explore', 'sans-serif'],
+      'ClashDisplay': ['Clash Display', 'sans-serif'],
     },
     boxShadow: {
       navbar: '0px 4px 10px rgba(0, 0, 0, 0.5)'

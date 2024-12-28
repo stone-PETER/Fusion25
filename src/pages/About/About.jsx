@@ -1,13 +1,11 @@
-import React from 'react';
+import Heading from "../../components/Heading"
 
 const About = () => {
   return (
-    <div className="about-bg text-white p-8 text-center  flex flex-col justify-center">
-      <h2 className="font-RoverExplore text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-wide uppercase mt -8 mb-6">
-        ABOUT FUSION
-      </h2>
+    <div className="bg-black text-white p-32 text-center  flex flex-col justify-center">
+      <Heading heading="about fusion"/>
 
-      <p className="mt-10 text-base leading-relaxed font-ClashDisplay text-center max-w-3xl mx-auto mb-8">
+      <p className="my-8 text-base md:text-lg leading-relaxed font-ClashDisplay text-center max-w-3xl mx-auto mb-8">
         "FUSION 2025 is an exciting three-day event hosted by IEEE SPS SBC MACE in collaboration with the IEEE SPS Kerala Chapter, taking place on February 21, 22, and 23, 2025. Designed to inspire and engage
         students, FUSION is a vibrant mix of
         technical sessions, hands-on workshops,
@@ -20,7 +18,7 @@ const About = () => {
       <img
         src="src/assets/logo.png"
         alt="Fusion Logo"
-        className="mt-8 w-[250px] h-auto mx-auto block"
+        className="mt-8 w-64 h-auto mx-auto block"
       />
     </div>
   );
