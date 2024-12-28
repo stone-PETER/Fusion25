@@ -47,7 +47,7 @@ const SessionsCard = ({onMouseEnter,onMouseLeave,name,description,image}) => {
                                 {name}
                             </div>
                             <div className="absolute bottom-[15px] left-[50%] transform -translate-x-1/2 w-[85px] h-[10px] bg-white rounded-[5px] flex items-center justify-center">
-                                <img src='/src/assets/mic2.png' className="size-2" />
+                                <img src='/Images/mic2.png' className="size-2" />
                                 <span className="text-[9px] leading-[10px] font-medium text-black">
                                     To Be Announced
                                 </span>
@@ -78,7 +78,7 @@ const SessionsCard = ({onMouseEnter,onMouseLeave,name,description,image}) => {
                     }}
                 >
                     <img
-                        src="/src/assets/black-bg.png"
+                        src="/Images/black-bg.png"
                         alt="Background 1"
                         className="w-full h-full object-cover"
                     />
