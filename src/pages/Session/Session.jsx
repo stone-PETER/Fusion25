@@ -36,7 +36,7 @@ const Session = () => {
 
   let swiperInstance = null;
   return (
-    <section className="bg-black py-12 relative overflow-hidden">
+    <section id="sessions" className="bg-black py-12 relative overflow-hidden">
 
       <div className="gradient-circle absolute  left-10"></div>
       <div className="gradient-circle absolute  right-10"></div>

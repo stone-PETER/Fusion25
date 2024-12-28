@@ -3,6 +3,7 @@ import './../../index.css'
 
 const About = () => {
   return (
+    <section id="about">
     <div className="bg-black text-white p-8 md:p-32 text-center flex flex-col justify-center relative overflow-hidden">
       <div className="gradient-circle absolute top-10 left-20"></div>
       <div className="gradient-circle absolute top-1/4 right-10"></div>
@@ -25,6 +26,7 @@ const About = () => {
         className="mt-8 w-64 h-auto mx-auto block"
       />
     </div>
+    </section>
   );
 };
 
