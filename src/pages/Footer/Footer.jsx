@@ -18,24 +18,25 @@ const Footer = () => {
 
   return (
     <footer className="relative w-full py-8">
-      {/* Asymmetric dark gradient background */}
       <div className="absolute inset-0 bg-black">
         <div
           className="absolute inset-0"
           style={{
-            background: `radial-gradient(circle at 8% 25%, rgb(52, 2, 63) 0%, transparent 35%),
-                         radial-gradient(circle at 25% 15%, rgba(155, 8, 172, 0.9) 0%, transparent 45%),
-                         radial-gradient(ellipse at 15% 45%, rgb(1, 0, 1) 0%, transparent 40%),
-                         radial-gradient(circle at 20% 65%, rgb(155, 6, 182) 0%, transparent 35%),
-                         radial-gradient(ellipse at 12% 85%, rgba(181, 8, 197, 0.59) 0%, transparent 45%),
-                         radial-gradient(circle at 35% 35%, rgba(127, 1, 134, 0.78) 0%, transparent 30%),
-                         radial-gradient(ellipse at 45% 65%, rgba(142, 3, 163, 0.55) 0%, transparent 35%),
-                         radial-gradient(circle at 75% 45%, rgb(97, 0, 106) 0%, transparent 30%),
-                         radial-gradient(ellipse at 85% 75%, rgb(44, 1, 48) 0%, transparent 40%)`,
+            background: `
+              radial-gradient(circle at 8% 25%, rgba(190, 24, 193, 0.45) 0%, transparent 35%),
+              radial-gradient(circle at 25% 15%, rgba(201, 55, 204, 0.35) 0%, transparent 45%),
+              radial-gradient(ellipse at 15% 45%, rgba(173, 20, 175, 0.3) 0%, transparent 40%),
+              radial-gradient(circle at 20% 65%, rgba(208, 68, 211, 0.4) 0%, transparent 35%),
+              radial-gradient(ellipse at 12% 85%, rgba(194, 38, 197, 0.35) 0%, transparent 45%),
+              radial-gradient(circle at 35% 35%, rgba(186, 32, 189, 0.35) 0%, transparent 30%),
+              radial-gradient(ellipse at 45% 65%, rgba(177, 26, 180, 0.3) 0%, transparent 35%),
+              radial-gradient(circle at 75% 45%, rgba(169, 21, 172, 0.35) 0%, transparent 30%),
+              radial-gradient(ellipse at 85% 75%, rgba(162, 17, 164, 0.3) 0%, transparent 40%)
+            `
           }}
         />
       </div>
-      
+
       {/* Content container */}
       <div className="relative z-10 container mx-auto px-4">
         <div className="text-center">
@@ -47,7 +48,7 @@ const Footer = () => {
             {contacts.map((contact, index) => (
               <a
                 key={index}
-                href={`https://wa.me/${contact.number.replace(98787675645342432, "")}`}
+                href={`https://wa.me/${contact.number.replace("+", "")}`}
                 className="flex items-center gap-2 text-white hover:text-green-400 transition-colors duration-300"
                 target="_blank"
                 rel="noopener noreferrer"
