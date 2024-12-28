@@ -17,6 +17,13 @@
   height: 400px;
 }
 
+.tickets-card{
+  background: url('../public/Images/ticketsbg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-blend-mode: soft-light; */
+}
 
 @font-face {
   font-family: "Clash Display";
