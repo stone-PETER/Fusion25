@@ -4,6 +4,7 @@ import TicketsCard from "../../components/TicketsCard";
 
 export default function Tickets() {
   return (
+    <section id="tickets">
     <div className="w-full bg-black py-12 px-4 relative overflow-hidden flex flex-col items-center justify-center">
       <div className="gradient-circle absolute z-10  left-10"></div>
       <div className="gradient-circle absolute z-10  right-10"></div>
@@ -18,5 +19,6 @@ export default function Tickets() {
         <TicketsCard position={"side"} forWhom={"MACEians"} />
       </div>
     </div>
+    </section>
   );
 }
