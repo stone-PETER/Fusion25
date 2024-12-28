@@ -8,7 +8,7 @@ const SessionsCard = ({onMouseEnter,onMouseLeave,name,description,image}) => {
         <ReactCardFlip isFlipped={flip} flipDirection="horizontal"
         >
             {/*Front*/}
-            <div className="mx-auto mt-10 relative w-[263px] h-[429px]"
+            <div className="mx-auto mt-5 relative w-[263px] h-[429px]"
             onMouseEnter={onMouseEnter} 
             onMouseLeave={onMouseLeave}
             >
@@ -53,14 +53,15 @@ const SessionsCard = ({onMouseEnter,onMouseLeave,name,description,image}) => {
                                 </span>
                             </div>
                         </div>
-                        <div
-                            className="absolute bottom-[-60px] left-[50%] transform -translate-x-1/2 flex items-center justify-center w-[80px] h-[20px] border border-white rounded-[45px] cursor-pointer"
+                        <button
+                            className="absolute bottom-[-60px] left-[50%] transform -translate-x-1/2 flex items-center justify-center w-[100px] h-[20px] border border-white rounded-[45px] cursor-pointer"
                             onClick={() => setFlip(!flip)}
                         >
-                            <span className="text-[10px] leading-[10px] tracking-[0.08em] font-medium text-white font-inter">
+                            <span className="text-[10px] leading-[10px] tracking-[0.08em] font-medium text-white font-inter cursor-pointer"
+                            >
                                 Know More
                             </span>
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -93,12 +94,12 @@ const SessionsCard = ({onMouseEnter,onMouseLeave,name,description,image}) => {
                     <div className="absolute top-[195px] left-[50%] transform -translate-x-1/2 text-center text-white text-sm line leading-[20px] tracking-wide w-full px-8">
                         {description}
                     </div>
-                    <div
-                        className="absolute top-[20px] left-[12%] transform -translate-x-1/2 flex items-center justify-center w-[80px] h-[20px]"
+                    <button
+                        className="absolute top-[20px] left-[12%] transform -translate-x-1/2 flex items-center justify-center w-[80px] h-[20px] cursor-pointer"
                         onClick={() => setFlip(!flip)}
                     >
                         <GoArrowRight className="text-white size-8"/>
-                    </div>
+                    </button>
 
                 </div>
             </div>
