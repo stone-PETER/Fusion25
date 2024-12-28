@@ -22,7 +22,7 @@ const About = () => {
       </p>
 
       <img
-        src="src/assets/logo.png"
+        src="/Images/logo.png"
         alt="Fusion Logo"
         className="mt-8 w-64 h-auto mx-auto block"
       />
