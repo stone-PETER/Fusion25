@@ -3,6 +3,7 @@ import RegBtn from '../../components/RegBtn';
 
 const Hero = () => {
   return (
+    <section id="home">
     <div className="relative w-full h-screen md:h-[900px] bg-black overflow-hidden">
 
       <img
@@ -40,6 +41,7 @@ const Hero = () => {
 
       </div>
     </div>
+    </section>  
   );
 };
 
