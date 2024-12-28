@@ -20,3 +20,8 @@
   font-weight: normal;
   font-style: normal;
 }
+.about-bg {
+  background: radial-gradient(circle, #1c0327 0%, #000000 100%);
+  width: 100%;  
+}
+

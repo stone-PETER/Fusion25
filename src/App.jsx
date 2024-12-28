@@ -1,8 +1,13 @@
-import Sessions from "./pages/Session/sessions"
+import './index.css'
+import Hero from "./pages/Hero/Hero"
+import Session from './pages/Session/Session'
 
 const App = () => {
   return (
-    <Sessions/>
+    <div>
+      <Hero />
+      <Session/>
+    </div>
   )
 }
 export default App
