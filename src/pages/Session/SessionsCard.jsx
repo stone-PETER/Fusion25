@@ -38,7 +38,7 @@ const SessionsCard = ({onMouseEnter,onMouseLeave,name,description,image}) => {
                                 className="w-full h-full object-cover"
                             />
                             <div
-                                className="absolute top-[70px] left-[50%] transform -translate-x-1/2 w-[126px] h-[134px] bg-cover border border-white rounded-[30px]"
+                                className="absolute top-[70px] left-[50%] transform -translate-x-1/2 w-[126px] h-[134px] bg-cover border border-white rounded-[30px] bg-center"
                                 style={{
                                     backgroundImage: `url(${image})`  
                                 }}
