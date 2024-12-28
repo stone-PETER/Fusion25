@@ -17,19 +17,19 @@ const Session = () => {
         name: "Real-Time Signal Processing in IoT Devices",
         description:
           "Gain an in-depth understanding of how signal processing revolutionizes real-time applications in IoT. The session provides invaluable insights and skills that are highly relevant in professional and industry settings.",
-        image:'/src/assets/session-img.png'
+        image:'/src/assets/iot.jpg'
       },
       {
         name: "Renewable Energy Signal Processing for Smart Grids",
         description:
           "Learn how signal processing helps manage and improve the performance of smart grids, making energy distribution more efficient and reliable.",
-        image:'/src/assets/session-img.png'
+        image:'/src/assets/smart-grids.jpg'
       },
       {
         name: "Career Paths in Signal Processing",
         description:
           "Explore the vast career opportunities in the field of signal processing and its impact across industries. This session will provide valuable insights into the potential pathways and skills needed to excel in this dynamic domain.",
-        image:'/src/assets/session-img.png'
+        image:'/src/assets/career.jpg'
       },
       
     ]
