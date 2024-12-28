@@ -16,7 +16,9 @@
   width: 400px; 
   height: 400px;
 }
-
+@media (max-width: 767px) {
+ 
+}
 
 @font-face {
   font-family: "Clash Display";
