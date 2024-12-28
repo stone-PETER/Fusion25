@@ -3,7 +3,7 @@ import './../../index.css'
 
 const About = () => {
   return (
-    <div className="bg-black text-white p-32 text-center  flex flex-col justify-center relative">
+    <div className="bg-black text-white p-32 text-center  flex flex-col justify-center relative overflow-hidden">
 
       <div className="gradient-circle absolute top-10 left-20"></div>
       <div className="gradient-circle absolute top-1/4 right-10"></div>

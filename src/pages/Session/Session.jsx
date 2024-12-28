@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react"
 import Heading from "../../components/Heading"
 import SessionsCard from "./SessionsCard"
-import ContainerBox from "../../components/ContainerBox"
 import { Autoplay } from 'swiper/modules';
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -32,30 +31,18 @@ const Session = () => {
           "Explore the vast career opportunities in the field of signal processing and its impact across industries. This session will provide valuable insights into the potential pathways and skills needed to excel in this dynamic domain.",
         image:'/src/assets/session-img.png'
       },
-      {
-        name: "Introduction to Machine Learning for Signal Processing",
-        description:
-          "Explore the exciting intersection of machine learning and signal processing in this hands-on workshop. The workshop provides practical experience and invaluable foundational knowledge. Perfect for students interested in the fusion of AI and signal processing.",
-        image:'/src/assets/session-img.png'
-      },
-      {
-        name: "Introduction to Image Processing using Python",
-        description:
-          "Dive into the world of image processing with this hands-on workshop using Python. Learn the fundamentals of manipulating and analyzing images through practical coding exercises.",
-        image:'/src/assets/session-img.png'
-      },
+      
     ]
 
   let swiperInstance = null;
   return (
-    <section className="bg-black py-10 relative overflow-hidden">
+    <section className="bg-black py-12 relative overflow-hidden">
 
       <div className="gradient-circle absolute  left-10"></div>
       <div className="gradient-circle absolute  right-10"></div>
       <div className="gradient-circle absolute bottom-0 left-1/4"></div>
 
         <Heading heading="sessions" />
-        <ContainerBox>
           <Swiper
               onSwiper={(swiper) => (swiperInstance = swiper)}
               loop={true}
@@ -64,9 +51,9 @@ const Session = () => {
               className="mySwiper"
               effect={"coverflow"}
               coverflowEffect={{
-                rotate: 10,
-                stretch: 50,
-                depth: 200,
+                rotate: 0,
+                stretch: 0,
+                depth: 0,
                 modifier: 1,
                 slideShadows:false
               }}
@@ -81,7 +68,7 @@ const Session = () => {
                 },
                 1024: {
                   slidesPerView: 3,
-                  spaceBetween: 40,
+                  spaceBetween: 30,
                 },
               }}
             >
@@ -100,7 +87,6 @@ const Session = () => {
                   ))
                 }
             </Swiper>
-          </ContainerBox>
     </section>
   )
 }
