@@ -19,7 +19,7 @@ const SessionsCard = ({onMouseEnter,onMouseLeave,name,description,image}) => {
                     }}
                 >
                     <img
-                        src="/src/assets/black-bg.png"
+                        src="/Images/black-bg.png"
                         alt="Background 1"
                         className="w-full h-full object-cover"
                     />
@@ -33,7 +33,7 @@ const SessionsCard = ({onMouseEnter,onMouseLeave,name,description,image}) => {
                             }}
                         >
                             <img
-                                src="/src/assets/ash-bg.png"
+                                src="/Images/ash-bg.png"
                                 alt="Background 2"
                                 className="w-full h-full object-cover"
                             />

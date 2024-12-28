@@ -9,7 +9,7 @@ const Navbar = () => {
         <img src="/Images/35-mace.png" alt="35 - MACE Logo"
           className='w-16 sm:w-20 md:w-28 pt-2'
         />
-        <img src="/src/assets/logo.png" alt="35 - MACE Logo"
+        <img src="/Images/logo.png" alt="35 - MACE Logo"
           className='w-32 sm:hidden'
         />
       </div>
@@ -63,7 +63,7 @@ const Navbar = () => {
         <ul className="cursor-pointer hover:bg-[#B429BE] rounded-full px-3 py-1 duration-500 ease-in-out"><a>Tickets</a></ul>
         <ul className="cursor-pointer hover:bg-[#B429BE] rounded-full px-3 py-1 duration-500 ease-in-out"><a>Sessions</a></ul>
       </div>
-      <img src="/src/assets/logo.png" alt="35 - MACE Logo"
+      <img src="/Images/logo.png" alt="35 - MACE Logo"
         className='hidden sm:block w-16 sm:w-28 md:w-40'
       />
     </nav>
