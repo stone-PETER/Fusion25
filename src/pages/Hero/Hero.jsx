@@ -28,15 +28,17 @@ const Hero = () => {
           alt="Fusion Logo"
           className="w-96 md:w-160 mx-auto"
         />
-        <p className="text-white text-xl sm:text-3xl md:text-5xl tracking-widest mt-4 md:mt-6 font-ClashDisplay font-thin whitespace-nowrap">
-          <span className="mx-2 sm:mx-4 md:mx-6">D E C E M B E R</span>
-          <span className="mx-2 sm:mx-4 md:mx-6">2 4</span>
+        <p className="text-white text-lg sm:text-3xl md:text-4xl lg:text-5xl tracking-widest mt-4 md:mt-6 font-ClashDisplay font-thin whitespace-nowrap">
+          <span className="mx-2 sm:mx-4 md:mx-6">F E B R U A R Y</span>
+          <span className="mx-2 sm:mx-4 md:mx-6">2 1</span>
           <span className="mx-2 sm:mx-4 md:mx-6">|</span>
-          <span className="mx-2 sm:mx-4 md:mx-6">2 5</span>
+          <span className="mx-2 sm:mx-4 md:mx-6">2 2</span>
+          <span className="mx-2 sm:mx-4 md:mx-6">|</span>
+          <span className="mx-2 sm:mx-4 md:mx-6">2 3</span>
         </p>
       </div>
 
-      <div className="absolute bottom-32 md:bottom-8 left-1/2 transform -translate-x-1/2 z-10 mt-16 px-4 sm:px-8 md:px-0">
+      <div className="absolute bottom-10 md:bottom-8 left-1/2 transform -translate-x-1/2 z-10 mt-16 px-4 sm:px-8 md:px-0">
         <RegBtn />
 
       </div>
