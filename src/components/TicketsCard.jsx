@@ -1,9 +1,11 @@
-export default function TicketsCard({ position, forWhom }) {
+export default function TicketsCard({ position, forWhom, price }) {
   return (
     <div
       className={`mt-3 md:mt-0 ${
-        position == "center" ? "h-full w-60" : " h-full md:h-4/5 w-60 md:w-48"
-      } flex flex-col gap-4`}
+        position == "center"
+          ? "h-full w-60"
+          : " h-full md:h-4/5 w-[248px] md:w-48"
+      } flex flex-col gap-4 p-2 rounded-xl border border-white md:border-0`}
     >
       <div className="relative tickets-card h-full md:h-4/5 rounded-xl px-3 py-6 flex items-center flex-col">
         <img src="public/Images/tickets-logo.png" alt="" className=" w-full" />
@@ -36,8 +38,11 @@ export default function TicketsCard({ position, forWhom }) {
           {forWhom}
         </p>
       </div>
-      <div className=" hidden md:block h-1/5 rounded-2xl bg-white">
-        <img src="public/Images/barcode.png" />
+      <div className="flex items-center justify-center h-1/5 rounded-2xl bg-white">
+        {/* <img src="public/Images/barcode.png" /> */}
+        <p className=" text-2xl font-bold text-black font-RoverExplore">
+          &#8377;{price}&#47;&#8210;
+        </p>
       </div>
     </div>
   );
