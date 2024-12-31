@@ -9,7 +9,7 @@ const Navbar = () => {
         <img src="/Images/35-mace.png" alt="35 - MACE Logo"
           className='w-16 sm:w-20 md:w-28 pt-2'
         />
-        <img src="/src/assets/logo.png" alt="35 - MACE Logo"
+        <img src="/Images/logo.png" alt="35 - MACE Logo"
           className='w-32 sm:hidden'
         />
       </div>
@@ -58,12 +58,12 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="hidden text-sm md:text-base sm:gap-x-3 lg:ml-10 text-white sm:flex lg:gap-x-10 bg-[rgba(33,31,35,0.6)] px-6 py-2 rounded-full uppercase font-medium shadow-navbar backdrop-blur-md">
-        <ul className="cursor-pointer hover:bg-[#B429BE] rounded-full px-3 py-1 duration-500 ease-in-out"><a>Home</a></ul>
-        <ul className="cursor-pointer hover:bg-[#B429BE] rounded-full px-3 py-1 duration-500 ease-in-out"><a>About</a></ul>
-        <ul className="cursor-pointer hover:bg-[#B429BE] rounded-full px-3 py-1 duration-500 ease-in-out"><a>Tickets</a></ul>
-        <ul className="cursor-pointer hover:bg-[#B429BE] rounded-full px-3 py-1 duration-500 ease-in-out"><a>Sessions</a></ul>
+      <a href="#home" className="cursor-pointer hover:bg-[#B429BE] rounded-full px-3 py-1 duration-500 ease-in-out">Home</a>
+      <a href="#about" className="cursor-pointer hover:bg-[#B429BE] rounded-full px-3 py-1 duration-500 ease-in-out">About</a>
+      <a href="#tickets" className="cursor-pointer hover:bg-[#B429BE] rounded-full px-3 py-1 duration-500 ease-in-out">Tickets</a>
+      <a href="#sessions" className="cursor-pointer hover:bg-[#B429BE] rounded-full px-3 py-1 duration-500 ease-in-out">Sessions</a>
       </div>
-      <img src="/src/assets/logo.png" alt="35 - MACE Logo"
+      <img src="/Images/logo.png" alt="35 - MACE Logo"
         className='hidden sm:block w-16 sm:w-28 md:w-40'
       />
     </nav>
