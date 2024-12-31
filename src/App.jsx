@@ -10,7 +10,7 @@ const App = () => {
       <Hero />
       <About/>
       <Session/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   )
 }
